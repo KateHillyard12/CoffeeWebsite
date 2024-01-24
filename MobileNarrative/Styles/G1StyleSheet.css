@@ -1,0 +1,222 @@
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+:root {
+    --deepGreen: #313a38;
+    --black: black;
+    --white: #F2F1EC;
+    --lightGreen: #949F89;
+    --medBrown: #755A4C;
+    --lightBrown: #8F7555;
+    --darkBrown: #403124;
+
+}
+
+
+html {
+    background-color: var(--deepGreen);
+    color: var(--black);
+    font-family: 'Bookman Old Style';
+    font-size: 62.5%; /*10px*/
+}
+
+body
+{
+    line-height: 1.4;
+
+    cursor: default;
+}
+
+.legend {
+    font-family: 'Raleway', sans-serif;
+    fill: var(--white);
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+    align-items: center;
+    flex-grow: 1;
+    padding-top: 1rem;
+
+}
+
+.tooltip {
+    fill: var(--lightGreen);
+}
+h1 {
+    font-weight: 400;
+    font-size: 5rem;
+    color: var(--white);
+    text-align: center;
+    clear: both;
+    padding: 0.7rem 1.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: var(--lightBrown);
+    text-align: center;
+}
+
+    h2 a
+    {
+        font-size: inherit;
+    }
+
+h3
+{
+    font-size: 2.0rem;
+}
+
+h4
+{
+    font-size: 1.8rem;
+}
+
+p
+{
+    font-size: 1.4rem;
+}
+
+a
+{
+    font-size:1.6rem;
+    text-decoration: none;
+}
+
+/*webpage layout*/
+#WebPage
+{
+    width: 100%;
+    margin: 1.5rem auto;
+}
+
+#banner {
+    background-color: var(--lightGreen);
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px var(--black);
+    padding: 1rem 1rem 0 1rem;
+    margin: 0.5rem auto;
+}
+
+    #banner a#RAN
+    {
+        float:left;
+    }
+        #banner a#RAN img
+        {
+            height: 127px;
+            width: 500px;
+            border-radius: 20px;
+        }
+
+    #banner a#ME
+    {
+        float: right;
+    }
+
+        #banner a#ME img
+        {
+            height: 127px;
+            border-radius: 20px;
+        }
+
+    #banner nav {
+        background-color: var(--darkBrown);
+        border-radius: 10px;
+        padding: 0.5rem 0;
+        overflow: hidden;
+    }
+
+        #banner nav ul
+        {
+            text-align: center;
+        }
+
+        #banner nav li
+        {
+            display: inline;
+        }
+
+        #banner nav a {
+            color: var(--white);
+            padding: 1.0rem 2.0rem;
+        }
+
+            #banner nav a:hover {
+                background-color: var(--lightBrown);
+            }
+
+
+#Wrapper {
+    background-color: var(--medBrown);
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px var(--black);
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    padding-left: 150px;
+    
+    
+}
+
+        #Wrapper h2
+        {
+            padding: 1.0rem 0;
+        }
+        
+
+
+                
+    #Posts a {
+        color: var(--medBrown);
+    }
+
+        #Posts a:hover {
+            color: var(--deepGreen);
+            text-decoration: underline;
+        }
+
+        #Posts p
+        {
+            padding: 0.5rem;
+            text-align: center;
+        }
+
+    #Posts hr {
+        border-color: var(--deepGreen);
+        border-style: ridge;
+    }
+
+        #Posts footer
+        {
+            padding: 0.5rem;
+        }
+
+#Footer {
+    background-color: var(--lightBrown);
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px var(--black);
+    padding: 1.5rem;
+    overflow: hidden;
+}
+
+    #Footer #FROG 
+    {
+        float: left;
+    }
+
+    #Footer #COFF 
+    {
+        float: right;
+    }
+
+
+    #Footer p {
+        padding-top: 1rem;
+        text-align: center;
+        font-size: 10px;
+        font-style: italic;
+        color: var(--white);
+    }

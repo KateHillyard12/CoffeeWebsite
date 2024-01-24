@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Making Game</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link href="Styles/ExtraStyleSheet.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12" id="WebPage">
+                <header id="banner">
+                    <h1>How to Make Coffee</h1>
+                    <nav>
+                        <ul>
+                            <li><a href="Home.html">Home</a></li>
+                            <li><a href="G1.html">Time Graph</a></li>
+                            <li><a href="G2.html">Drink Graph</a></li>
+                            <li><a href="Data.html">Data</a></li>
+                            <li><a href="Extra.html">Game</a></li>
+                        </ul>
+                    </nav>
+                </header>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row" id="Wrapper">
+            <div class="col-12" id="Posts">
+                <div id="game-container">
+                    <canvas id="waterChart" width="400" height="200"></canvas>
+                    <div class="coffee-machine-wrapper">
+                        <div id="coffee-machine"></div>
+                        <div id="water-level"></div>
+                        <div id="grounds-block"></div>
+                        <div id="brewed-ball"></div>
+                    </div>
+                    <button id="add-water-button">Add Water</button>
+                    <button id="add-coffee-button">Add Coffee</button>
+                    <button id="brew-button">Brew Coffee</button>
+                    <div id="result"></div>
+                </div>
+                <script src="assests/js/react/Component/ReactCoffeeGame.js"></script>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
